@@ -1,6 +1,58 @@
-/* Füge globale Styles hinzu */
-body {
-  background: #fff;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+/* styles/globals.css */
+
+button, a.button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  user-select: none;
+}
+
+button.discord, a.discord {
+  background-color: #5865F2;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(88, 101, 242, 0.5);
+}
+
+button.discord:hover, a.discord:hover {
+  background-color: #4752c4;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(71, 82, 196, 0.7);
+  animation: pulse 1s infinite;
+}
+
+button.products, a.products {
+  background-color: #22c55e;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(34, 197, 94, 0.5);
+}
+
+button.products:hover, a.products:hover {
+  background-color: #16a34a;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.7);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+  }
+}
+
+/* Container für die Buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
 }
