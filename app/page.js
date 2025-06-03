@@ -1,12 +1,13 @@
 export default function HomePage() {
   return (
-    <div>
-      <h1>Willkommen bei Traders Edge</h1>
-      <p>Wähle eine Option:</p>
-      <ul>
-        <li><a href="/discord">Tritt unserem Discord bei</a></li>
-        <li><a href="/produkte">Unsere Produkte</a></li>
-      </ul>
+    <div className="button-container">
+      <a href="/discord" className="discord button">
+        Discord beitreten
+      </a>
+
+      <a href="/produkte" className="products button">
+        Produkte ansehen
+      </a>
     </div>
   );
 }
